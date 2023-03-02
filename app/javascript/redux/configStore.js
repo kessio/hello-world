@@ -1,13 +1,10 @@
-import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import greetingsReducer from './reducers/greetings';
+import { configureStore } from "@reduxjs/toolkit";
+import greetingReducer from "./greetings/greetings";
 
-const allReducers = combineReducers({
-  greetings: greetingsReducer
+const store = configureStore({
+  reducer: {
+    greetings: greetingReducer,
+  },
 });
 
-const setupStore = (preloadedState) => configureStore({
-    reducer: allReducers,
-    preloadedState,
-  });
-  
-  export default setupStore;
+export default store;
