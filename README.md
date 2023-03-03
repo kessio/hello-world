@@ -102,7 +102,8 @@ Install this project with:
 
 ```sh
   cd my-project
-  gem install
+  bundle install
+  npm install
 ```
 
 ### Usage
@@ -116,12 +117,7 @@ To run the project, execute the following command:
 
 ### Run tests
 
-To run tests, run the following command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
-
+There are no tests to run for this project
 
 ### Deployment
 
